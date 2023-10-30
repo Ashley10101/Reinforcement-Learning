@@ -13,3 +13,8 @@ This is used to record learning Reinforcement learning, reference code:
 **environment reward**: target=1; others=0  
 #### 1.2 Maze
 ![GitHub Logo](Q-learning/Maze/img.png)
+**action**: up; down; right; left 
+**Red rectangle**: explorer
+**Black rectangles**: hells[reward = -1].    
+**Yellow bin circle**: paradise[reward = +1].    
+**All other states**: ground[reward = 0].
