@@ -12,3 +12,4 @@ This is used to record learning Reinforcement learning, reference code:
 **T**: target  
 **environment reward**: target=1; others=0  
 #### 1.2 Maze
+
