@@ -20,7 +20,7 @@ class RL(object):
     
     def choose_action(self, observation):
         self.check_state_exist(observation)
-        if np.random.rand() < self.epsilon:
+        if np.random.rand() <= self.epsilon:
             action = np.random.choice(self.actions)
         else:
             state_action = self.q_table.loc[observation, :]
@@ -31,13 +31,13 @@ class RL(object):
         pass
 
 class SarsaTable(RL):
-    def __init__(self, actions, learning_rate=0.01, reward_decay=0.9, e_greedy=0.9):
+    def __init__(self, actions, learning_rate=0.01, reward_decay=0.9, e_greedy=0.1):
         super(SarsaTable, self).__init__(actions, learning_rate, reward_decay, e_greedy)
 
     def learn(self, s, a, r, s_, a_):
         self.check_state_exist(s_)
         q_predict = self.q_table.loc[s, a]
-        if s != 'terminal':
+        if s_ != 'terminal':
             q_target = r + self.gamma*self.q_table.loc[s_, a_]
         else:
             q_target = r

@@ -16,6 +16,8 @@ def update():
             if done:
                 break
 
+    print('game over')
+    env.destroy()
 
 if __name__ == "__main__":
     env = Maze()
