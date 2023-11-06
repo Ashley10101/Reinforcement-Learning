@@ -1,5 +1,5 @@
 from env import Maze
-from RL_brain import DeepQNetwor
+from RL_brain import DeepQNetwork
 
 def run_maze():
     step = 0
@@ -30,7 +30,14 @@ def run_maze():
 
 if __name__ == '__main__':
     env = Maze()
-    RL = DeepQNetwor(env.n_actions, )
+    RL = DeepQNetwork(env.n_actions, env.n_features,
+                        learning_rate=0.01,
+                        reward_decay=0.9,
+                        e_greedy=0.9,
+                        replace_target_iter=200,
+                        memory_size=2000,
+                        # output_graph=True
+                        )
     env.after(100, run_maze)
     env.mainloop()
     RL.plot_cost()

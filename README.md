@@ -32,8 +32,8 @@ s -> NN -> actions value
 (2) Fixed Q-targets  
 #### Steps:
 `env`:   
-tensorflow 1.15.0  
-python 3.7  
+tensorflow 2.14.0  
+python 3.8  
 `code`:  
 (1) conda create -n RL_tensorflow python=3.7  
 (2) conda activate RL_tensorflow (windows) / source activate RL_tensorflow (Linux/macOS)
