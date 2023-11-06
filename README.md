@@ -12,7 +12,7 @@ This is used to record learning Reinforcement learning, reference code:
 **T**: target  
 **environment reward**: target=1; others=0  
 #### 1.2 Maze
-![GitHub Logo](Q-learning/Maze/img.png)  
+![GitHub Logo](1_Q-learning/Maze/img.png)  
 **action**: up; down; right; left   
 **Red rectangle**: explorer  
 **Black rectangles**: hells&nbsp;&nbsp;[reward = -1].      
@@ -34,7 +34,13 @@ s -> NN -> actions value
 `env`:   
 tensorflow 2.14.0  
 python 3.8  
-`code`:  
-(1) conda create -n RL_tensorflow python=3.7  
-(2) conda activate RL_tensorflow (windows) / source activate RL_tensorflow (Linux/macOS)
-(3) pip install tensorflow==1.15
+#### 4.1 Maze
+![GitHub Logo](1_Q-learning/Maze/img.png) 
+#### 4.2 cartpole
+![GitHub Logo](3_DQN/CartPole/img.png)   
+ref: https://www.gymlibrary.dev/environments/classic_control/cart_pole/
+#### 4.3 Mountain Car  
+![GitHub Logo](3_DQN/MountainCar/img.png) 
+ref: https://www.gymlibrary.dev/environments/classic_control/mountain_car/  
+### 5. Policy Gradient (off-policy)  
+directly output the action, rather than its value
