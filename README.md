@@ -41,6 +41,6 @@ python 3.8
 ref: https://www.gymlibrary.dev/environments/classic_control/cart_pole/
 #### 4.3 Mountain Car  
 ![GitHub Logo](3_DQN/MountainCar/img.png) 
-ref: https://www.gymlibrary.dev/environments/classic_control/mountain_car/  
+ref: https://www.gymlibrary.dev/environments/classic_control/mountain_car/   
 ### 5. Policy Gradient (off-policy)  
 directly output the action, rather than its value
