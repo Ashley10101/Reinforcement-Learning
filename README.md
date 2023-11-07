@@ -44,3 +44,5 @@ ref: https://www.gymlibrary.dev/environments/classic_control/cart_pole/
 ref: https://www.gymlibrary.dev/environments/classic_control/mountain_car/   
 ### 5. Policy Gradient (off-policy)  
 directly output the action, rather than its value
+existing problem:  
+probability of unsampled action decrease  
