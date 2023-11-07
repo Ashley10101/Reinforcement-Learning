@@ -3,10 +3,10 @@ from RL_brain import PolicyGradient
 import matplotlib.pyplot as plt
 
 env = gym.make('MountainCar-v0',render_mode = "human")
-env = env.unwarpped 
+env = env.unwrapped
 RENDER = False
 DISPLAY_REWARD_THRESHOLD = -2000
-RL = PolicyGradien(
+RL = PolicyGradient(
     n_actions = env.action_space.n,
     n_features = env.observation_space.shape[0],
     learning_rate=0.02,
