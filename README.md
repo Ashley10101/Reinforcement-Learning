@@ -45,4 +45,10 @@ ref: https://www.gymlibrary.dev/environments/classic_control/mountain_car/
 ### 5. Policy Gradient (off-policy)  
 directly output the action, rather than its value
 existing problem:  
-probability of unsampled action decrease  
+(1) probability of unsampled action decrease  
+(2) can only update the parameters after the entire trajectory
+### 6. Actor Critic
+advantages:  
+(1) can update the parameters using single step's information  
+existing problem:  
+(1) it's hard for Critic to converge
